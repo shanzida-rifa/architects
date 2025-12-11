@@ -14,7 +14,7 @@ margin: 0;
     display: flex;
 }
 /* header styles */
-.banner{
+header{
     background: rgba(255, 144, 14, 0.1);
 }
 .navbar{
@@ -22,9 +22,13 @@ margin: 0;
     align-items: center;
     justify-content: space-around;
 }
+ .navbar , .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
 .brand{
-    color: var(--Dark 01, rgba(19, 19, 19, 1));
-font-size: 45px;
+    color:  rgba(19, 19, 19, 1);
+font-size: 3rem;
 font-weight: 700;
 text-align: center;
 }
@@ -33,9 +37,10 @@ text-align: center;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-font-size: 18px;
+font-size: 1rem;
 font-weight: 500;
 text-align: center;
+margin-right: 50px;
 }
 .nav-item{
     list-style: none;
@@ -43,4 +48,60 @@ text-align: center;
 .nav-link{
     text-decoration: none;
      color:  rgba(66, 66, 66, 1);
+}
+
+.banner-content{
+    max-width: 861px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.banner-title{
+    color:rgba(19, 19, 19, 1);
+font-size: 4rem;
+font-weight: 700;
+
+}
+.banner-info{color:  rgba(114, 114, 114, 1);
+font-size: 1rem;
+font-weight: 400;
+}
+.primary-btn{
+    height: 64px;
+    width: 180px;
+    border-radius: 8px;
+    border-width: 0;
+    background-color: rgba(255, 144, 14, 1);
+color:rgba(255, 255, 255, 1);
+margin-bottom: 3rem;
+font-size: 1.25em;
+font-weight: 600;
+}
+.banner-img{
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+/* responsive area */
+@media screen and (max-width: 576px) {
+   .navbar{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+   .anchor{
+    text-align: center;
+    margin-right: 50px;
+   }
+}
+@media screen and(min-width:576px) and (max-width:992px) {
+     .navbar{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+   .anchor{
+    text-align: center;
+    margin-right: 50px;
+   }
 }
