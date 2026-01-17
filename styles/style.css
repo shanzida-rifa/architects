@@ -17,6 +17,10 @@ margin: 0;
 header{
     background: rgba(255, 144, 14, 0.1);
 }
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
 .navbar{
    
     align-items: center;
@@ -30,7 +34,9 @@ header{
     color:  rgba(19, 19, 19, 1);
 font-size: 3rem;
 font-weight: 700;
-text-align: center;
+}
+.center-align{
+    text-align: center;
 }
 .anchor{
    
@@ -82,25 +88,50 @@ font-weight: 600;
     width: 100%;
 }
 
+.teams{
+    display: flex;
+    align-items: center;
+    gap: 73px;
+    margin-top: 85px;
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+
 /* responsive area */
 @media screen and (max-width: 576px) {
-   .navbar{
+   
+  .brand{
+    font-size: 2rem;
+  }
+  .anchor{
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-   }
-   .anchor{
     text-align: center;
-    margin-right: 50px;
-   }
-}
-@media screen and(min-width:576px) and (max-width:992px) {
-     .navbar{
+  }
+    .navbar , .nav-link{
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
+   }
+   .banner-title{
+    font-size: 2rem;
+   }
+   .team-img-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 10px;
+    
+}
+  
+}
+@media screen and (min-width:576px) and (max-width:992px) {
+     .navbar , .nav-link{
+    flex-direction: column;
+
    }
    .anchor{
+     flex-direction: column;
     text-align: center;
     margin-right: 50px;
    }
