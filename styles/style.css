@@ -72,6 +72,9 @@ font-weight: 700;
 font-size: 1rem;
 font-weight: 400;
 }
+.text-primary{
+    color: #FF900E;
+}
 .primary-btn{
     height: 64px;
     width: 180px;
@@ -87,7 +90,9 @@ font-weight: 600;
     margin-bottom: 2rem;
     width: 100%;
 }
-
+main>section{
+    margin-top: 130px;
+}
 .teams{
     display: flex;
     align-items: center;
@@ -98,6 +103,18 @@ font-weight: 600;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 24px;
+}
+.features{
+    margin-left: 130px;
+    max-width: 530px;
+}
+.feature-title{
+    font-size:2.8rem ;
+    font-weight: 700;
+}
+#quick-list{
+    color: #727272;
+    font-weight: 500;
 }
 
 /* responsive area */
@@ -117,16 +134,31 @@ font-weight: 600;
    .banner-title{
     font-size: 2rem;
    }
+   .features{
+    margin-left: 20px;
+   
+}
+   .teams{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 73px;
+    margin-top: 85px;
+}
    .team-img-container{
-    display: grid;
     grid-template-columns: repeat(1,1fr);
     gap: 10px;
     
 }
+
   
 }
+
+/* Medium size device */
 @media screen and (min-width:576px) and (max-width:992px) {
-     .navbar , .nav-link{
+     .navbar , 
+     .nav-link,
+     .teams{
     flex-direction: column;
 
    }
@@ -135,4 +167,14 @@ font-weight: 600;
     text-align: center;
     margin-right: 50px;
    }
+   .features{
+    margin-left: 50px auto;
+   
+}
+ .team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    
+}
 }
