@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-
-
 body {
     font-family: "Work Sans", sans-serif;
 margin: 0;
@@ -115,6 +112,31 @@ main>section{
 #quick-list{
     color: #727272;
     font-weight: 500;
+}
+.fact-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+  
+}
+.fact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+border: 1px solid rgba(255, 144, 14, 1);
+border-radius: 8px;
+  width: 240px;
+    height: 240px;
+}
+.fact-number{
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.fact-name{
+    font-size: 1.25rem;
+    font-weight: 600;
 }
 
 /* responsive area */
