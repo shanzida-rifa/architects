@@ -116,6 +116,7 @@ main>section{
 .fact-container{
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    margin-bottom: 100px;
   
 }
 .fact{
@@ -137,8 +138,33 @@ border-radius: 8px;
 .fact-name{
     font-size: 1.25rem;
     font-weight: 600;
+    color: #727272;
 }
-
+.fact-description{
+    max-width: 540px;
+}
+.ourFeatures{
+    display: flex;
+    gap: 140px;
+    align-items: center;
+    justify-content: center;
+}
+#feature-section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 1.25rem;
+    
+}
+.feature-card{
+     padding: 30px;
+    box-shadow: 0 4px 30px 0 rgba(0,0,0,0.06);
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+.feature-card .feature-title{
+    font-weight: 600;
+    font-size: 20px;
+   
+}
 /* responsive area */
 @media screen and (max-width: 576px) {
    
@@ -167,10 +193,14 @@ border-radius: 8px;
     gap: 73px;
     margin-top: 85px;
 }
-   .team-img-container{
+   .team-img-container, .fact-container{
     grid-template-columns: repeat(1,1fr);
     gap: 10px;
     
+}
+.fact-container{
+justify-content: center;
+
 }
 
   
